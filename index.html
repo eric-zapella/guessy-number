@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Guess the Number</title>
+</head>
+<body>
+    <header>
+        <span class="material-symbols-outlined" id="reset">
+            settings_backup_restore
+        </span>
+        <span style="color: #f3f3f3;"">*between 1 and 20*</span>
+    </header>
+    <main>
+        <h1 id="title">Guess the Number</h1>
+            
+        <div id="container-guess">
+            <div id="guessing-area">
+                <div>
+                    <input type="number" name="number" id="number" placeholder="Guess...">
+                    <button type="submit" id="guess-button">
+                        <span class="material-symbols-outlined">
+                            arrow_right_alt
+                        </span>
+                    </button>
+                </div>
+                <span class="material-symbols-outlined" id="icon">
+                    close
+                </span>
+            </div>
+            <div id="results">
+                <div>
+                    <span id="score">score - </span>
+                    <span></span>
+                </div>
+                <div>
+                    <span id="highscore"> highscore - </span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© Eric, Inc</p>
+    </footer>
+</body>
+</html>
